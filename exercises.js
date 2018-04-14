@@ -19,6 +19,11 @@ var day = 'Friday';
 
 var questionOneAnswer = 'You will be eating ' + numBurgers + ' burgers at this restaurant: ' + restaurant + ' with my friend, ' + friend + ' on this day: ' + day;
 
+function toggle1() {
+  document.getElementById('answer1').style.display === 'none' ? document.getElementById('answer1').style.display='' : document.getElementById('answer1').style.display='none';
+}
+
+
 //-----------------------------
 // #2 The Age Calculator 
 //-----------------------------
@@ -33,6 +38,9 @@ var birthyear = 1994;
 
 var questionTwoAnswer = 'They are ' + (year - birthyear) + ' or ' + (year - birthyear - 1);
 
+function toggle2() {
+  document.getElementById('answer2').style.display === 'none' ? document.getElementById('answer2').style.display='' : document.getElementById('answer2').style.display='none';
+}
 //-----------------------------
 // #3 The Temperature Converter
 //-----------------------------
@@ -45,14 +53,27 @@ var questionThreeAnswerA = celcius + symbol + ' degrees Celcius is ' + ((celcius
 // Farenheit to Celsius Answer
 var questionThreeAnswerB = farenheit + symbol + ' degrees Farenheit is ' + ((farenheit-32)*5/9) + symbol + ' degrees Celcius';
 
-
-
+function toggle4a() {
+  document.getElementById('answer3a').style.display === 'none' ? document.getElementById('answer3a').style.display='' : document.getElementById('answer3a').style.display='none';
+}
+function toggle4b(){
+  document.getElementById('answer3a').style.display = 'none'
+}
+function toggle5a() {
+  document.getElementById('answer3b').style.display === 'none' ? document.getElementById('answer3b').style.display='' : document.getElementById('answer3b').style.display='none';
+}
+function toggle5b() {
+  document.getElementById('answer3b').style.display = 'none'
+}
 //-----------------------------
 // #4 The Bonus Question
 //-----------------------------
 var farenheit1 = Math.random() + 99;
 var questionFourAnswer = farenheit1 + symbol + ' degrees Farenheit is ' + ((farenheit1-32)*5/9) + symbol + ' degrees Celcius';
 
+function toggle3() {
+  document.getElementById('answer4').style.display === 'none' ? document.getElementById('answer4').style.display='' : document.getElementById('answer4').style.display='none';
+}
 
 
 

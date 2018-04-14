@@ -30,11 +30,11 @@
   </div>
   <br/>
   <div>
-        <button type="button" onclick="document.getElementById('answer1').style.display='none'">
+        <button type="button" onclick="toggle1()">
           Result: 
         </button>
     <strong>
-      <span id='answer1'></span>
+      <span id='answer1' style="display:none"></span>
     </strong>
   </div>
   <div>
@@ -55,17 +55,14 @@
     </div>
     <br/>
   <div>
-    <button type="button" onclick="document.getElementById('answer2').style.display='none'">
+    <button type="button" onclick="toggle2()">
     Result: 
     </button>
     <strong>
-      <span id='answer2'></span>
+      <span id='answer2' style="display:none"></span>
     </strong>
   </div>
   <div>
-  <!-- 
-    I can't figure out how to make a button that would display the answer again after clicking
-  -->
     <h3>#3. The Temperature Converter</h3>
     <p>Let's make a program to convert celsius tempatures to fahrenheit and vice versa, so we can complain about the weather with
       our friends oversees.</p>
@@ -87,22 +84,19 @@
         Add some CSS so that when you hover over the word 'Result', the answer will be displayed. (Read the code inside this index.html file for some hints)
       </div>
       <br/>
-    <div>
+    <div onmouseover="toggle4a()" onmouseout="toggle4b()">
       Result (Celsius to Farenheit):
       <strong>
-        <span id='answer3a'></span>
+        <span id='answer3a'style="display:none"></span>
       </strong>
     </div>
       <br/>
-    <div>
+    <div onmouseover="toggle5a()" onmouseout="toggle5b()">
       Result (Farenheit to Celsius):
       <strong>
-        <span id='answer3b'></span>
+        <span id='answer3b'style="display:none"></span>
       </strong>
     </div>
-    <!-- 
-    I can't figure out the hover function for problem 3
-    -->
     <div>
       <h3>#4. Bonus Question: Using Math functions</h3>
       <p>JavaScript has a built-in tool that can generate a random number between 0 and 1. This tool is called a
@@ -118,9 +112,11 @@
       </ul>
         <br/>
       <div>
+          <button type="button" onclick="toggle3()">
         Result: 
+          </button>
         <strong>
-          <span id='answer4'></span>
+          <span id='answer4' style="display:none"></span>
         </strong>
       </div>
     </div>

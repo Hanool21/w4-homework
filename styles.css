@@ -4,9 +4,4 @@ body {
 #answer2 {
 font-size: 20px;
 }
-#answer3 {
-  display: none;
-}
-a:hover #answer3 {
-  display: block;
-}
+

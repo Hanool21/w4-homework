@@ -68,7 +68,7 @@ function toggle5b() {
 //-----------------------------
 // #4 The Bonus Question
 //-----------------------------
-var farenheit1 = Math.random() + 99;
+var farenheit1 = Math.random()*100;
 var questionFourAnswer = farenheit1 + symbol + ' degrees Farenheit is ' + ((farenheit1-32)*5/9) + symbol + ' degrees Celcius';
 
 function toggle3() {

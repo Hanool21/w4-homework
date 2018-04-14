@@ -30,22 +30,9 @@
   </div>
   <br/>
   <div>
-    Make the button below hide or show the answer when you click on it. (Read the code inside this index.html file for some hints)
-  </div>
-  <br/>
-  <div>
-    <!-- 
-      HINT: Here's a sample: 
-
-        <p id="demo">JavaScript can hide HTML elements.</p>
-
-        <button type="button" onclick="document.getElementById('demo').style.display='none'">Click Me!</button>
-        
-      In the code above, it finds the element with the id of 'demo', and and hides the content of 'demo'.
-    -->
-    <button>
-      Result: 
-    </button>
+        <button type="button" onclick="document.getElementById('answer1').style.display='none'">
+          Result: 
+        </button>
     <strong>
       <span id='answer1'></span>
     </strong>
@@ -68,15 +55,17 @@
     </div>
     <br/>
   <div>
-    <!-- 
-      HINT: Don't forget to wrap the word 'Result:' in a button tag. 
-    -->
+    <button type="button" onclick="document.getElementById('answer2').style.display='none'">
     Result: 
+    </button>
     <strong>
       <span id='answer2'></span>
     </strong>
   </div>
   <div>
+  <!-- 
+    I can't figure out how to make a button that would display the answer again after clicking
+  -->
     <h3>#3. The Temperature Converter</h3>
     <p>Let's make a program to convert celsius tempatures to fahrenheit and vice versa, so we can complain about the weather with
       our friends oversees.</p>
@@ -99,18 +88,21 @@
       </div>
       <br/>
     <div>
-      <!-- HINT: This involves a combination of CSS and DOM manipulation. Think about the display style for id='answer3a'. -->
-      Result (Celsius to Farenheit): 
+      Result (Celsius to Farenheit):
       <strong>
         <span id='answer3a'></span>
       </strong>
     </div>
       <br/>
-    <div>Result (Farenheit to Celsius): 
+    <div>
+      Result (Farenheit to Celsius):
       <strong>
         <span id='answer3b'></span>
       </strong>
     </div>
+    <!-- 
+    I can't figure out the hover function for problem 3
+    -->
     <div>
       <h3>#4. Bonus Question: Using Math functions</h3>
       <p>JavaScript has a built-in tool that can generate a random number between 0 and 1. This tool is called a
